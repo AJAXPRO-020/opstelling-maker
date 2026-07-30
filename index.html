@@ -3,61 +3,312 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ajax Opstelling Maker</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta
+      name="description"
+      content="Maak gratis je eigen Ajax-opstelling. Kies spelers en formatie, voorspel de uitslag en download of deel jouw opstelling als afbeelding."
+    />
+    <meta name="theme-color" content="#b30f24" />
+    <link rel="canonical" href="https://opstelling.ajaxpro.fans/" />
+    <title>Ajax Opstelling Maken – Gratis Line-up Maker | AjaxPro</title>
+
+    <meta property="og:locale" content="nl_NL" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AjaxPro" />
+    <meta property="og:title" content="Ajax Opstelling Maken – Gratis Line-up Maker" />
+    <meta
+      property="og:description"
+      content="Stel jouw ideale Ajax-elftal samen, kies een formatie en deel je opstelling als afbeelding."
+    />
+    <meta property="og:url" content="https://opstelling.ajaxpro.fans/" />
+    <meta property="og:image" content="https://opstelling.ajaxpro.fans/assets/ajaxpro-opstelling-maker.webp" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="AjaxPro Opstelling Maker" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ajax Opstelling Maken – Gratis Line-up Maker" />
+    <meta
+      name="twitter:description"
+      content="Stel jouw ideale Ajax-elftal samen, kies een formatie en deel je opstelling als afbeelding."
+    />
+    <meta name="twitter:image" content="https://opstelling.ajaxpro.fans/assets/ajaxpro-opstelling-maker.webp" />
+    <meta name="twitter:image:alt" content="AjaxPro Opstelling Maker" />
+
+    <link rel="icon" href="Favicon/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="Favicon/site.webmanifest" />
+    <link rel="stylesheet" href="styles.css?v=20260729-fluid-markers" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://opstelling.ajaxpro.fans/#organization",
+            "name": "AjaxPro",
+            "url": "https://opstelling.ajaxpro.fans/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://opstelling.ajaxpro.fans/assets/ajaxpro-logo-black.png"
+            },
+            "sameAs": ["https://linktr.ee/AjaxPro_"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://opstelling.ajaxpro.fans/#website",
+            "url": "https://opstelling.ajaxpro.fans/",
+            "name": "AjaxPro Opstelling Maker",
+            "description": "Gratis online tool om een Ajax-opstelling samen te stellen en te delen.",
+            "inLanguage": "nl-NL",
+            "publisher": {
+              "@id": "https://opstelling.ajaxpro.fans/#organization"
+            }
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://opstelling.ajaxpro.fans/#app",
+            "name": "AjaxPro Opstelling Maker",
+            "url": "https://opstelling.ajaxpro.fans/",
+            "description": "Maak een eigen Ajax-opstelling, kies spelers en formatie, voorspel de uitslag en download of deel het resultaat als afbeelding.",
+            "applicationCategory": "SportsApplication",
+            "operatingSystem": "Elk besturingssysteem met een moderne webbrowser",
+            "browserRequirements": "JavaScript en een moderne webbrowser",
+            "inLanguage": "nl-NL",
+            "isAccessibleForFree": true,
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "EUR"
+            },
+            "featureList": [
+              "Ajax-spelers selecteren",
+              "Kiezen uit 4-3-3, 4-4-2 en 5-3-2",
+              "Thuis- en uitwedstrijd instellen",
+              "Verwachte uitslag invullen",
+              "Opstelling downloaden als afbeelding",
+              "Opstelling delen"
+            ],
+            "image": "https://opstelling.ajaxpro.fans/assets/ajaxpro-opstelling-maker.webp",
+            "publisher": {
+              "@id": "https://opstelling.ajaxpro.fans/#organization"
+            },
+            "isPartOf": {
+              "@id": "https://opstelling.ajaxpro.fans/#website"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://opstelling.ajaxpro.fans/#veelgestelde-vragen",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Hoe maak ik een Ajax-opstelling?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Vul de wedstrijdgegevens in, kies een formatie en wijs elf spelers toe aan de posities. Daarna kun je de spelers op het veld verslepen."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Welke formaties kan ik kiezen?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "De AjaxPro Opstelling Maker ondersteunt 4-3-3, 4-4-2 en 5-3-2."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Kan ik mijn Ajax-opstelling downloaden en delen?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ja. Je kunt de complete opstelling als afbeelding downloaden of via het deelmenu van je apparaat delen."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Wordt mijn opstelling opgeslagen?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nee. Je naam, wedstrijdgegevens en spelerskeuzes blijven in je browser en worden niet door AjaxPro opgeslagen."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
-  <body>
+  <body data-theme="ajaxpro-kit" data-formation="4-3-3">
     <main class="app-shell">
-      <section class="sidebar" aria-label="Ajax selectie">
-        <div class="brand-strip">
-          <div>
-            <p class="eyebrow">Ajax 1</p>
-            <h1>Opstelling Maker</h1>
-          </div>
-          <button class="ghost-button" id="resetButton" type="button">Reset</button>
-        </div>
+      <section class="poster-panel" aria-label="AjaxPro opstelling preview">
+        <article class="poster" id="poster">
+          <header class="poster-header">
+            <img class="poster-logo" src="assets/ajaxpro-logo-black.png" alt="AjaxPro" />
+            <div class="poster-title">
+              <p class="eyebrow">De opstelling</p>
+              <h1><span id="posterMatchup">Ajax<br />Tegenstander</span></h1>
+              <p class="creator-line">door <span id="posterCreatorTop"></span></p>
+            </div>
+            <div class="scoreline">
+              <span id="posterAjaxScore">0</span>
+              <span>-</span>
+              <span id="posterOpponentScore">0</span>
+            </div>
+          </header>
 
-        <div class="toolbar">
-          <label class="search-box">
-            <span>Zoek speler</span>
-            <input id="playerSearch" type="search" placeholder="Naam, positie of rugnummer" />
-          </label>
-          <div class="selection-count">
-            <strong id="selectedCount">0</strong>
-            <span>/ 11 gekozen</span>
+          <div class="pitch" id="pitch" aria-label="Sleepbare 4-3-3 opstelling">
+            <svg class="pitch-lines" viewBox="0 0 100 100" aria-hidden="true" preserveAspectRatio="none">
+              <defs></defs>
+              <g class="board-surface"></g>
+              <g class="pitch-surface"></g>
+              <g class="goal-surface"></g>
+            </svg>
           </div>
-        </div>
 
-        <div class="player-list" id="playerList" aria-live="polite"></div>
+        </article>
       </section>
 
-      <section class="field-panel" aria-label="Visueel voetbalveld">
-        <div class="panel-header">
-          <div>
-            <p class="eyebrow">Formatie</p>
-            <h2 id="formationTitle">4-3-3</h2>
-          </div>
-          <div class="status-pill" id="statusPill">Kies posities 1-11</div>
+      <section class="editor-panel" aria-label="Opstelling instellingen">
+        <div class="editor-header editor-header-compact">
+          <button class="primary-button" id="downloadButton" type="button" aria-label="Download opstelling">Download</button>
+          <button class="ghost-button share-button" id="shareButton" type="button" aria-label="Deel opstelling">Delen</button>
+          <button class="ghost-button reset-button" id="resetButton" type="button" aria-label="Reset opstelling">↺ Reset</button>
         </div>
 
-        <div class="pitch-wrap">
-          <div class="pitch" id="pitch" role="img" aria-label="Voetbalveld met gekozen Ajax-spelers">
-            <div class="pitch-line halfway"></div>
-            <div class="pitch-line center-circle"></div>
-            <div class="pitch-line box top-box"></div>
-            <div class="pitch-line box bottom-box"></div>
-            <div class="pitch-line small-box top-small-box"></div>
-            <div class="pitch-line small-box bottom-small-box"></div>
+          <div class="editor-scroll">
+          <div class="mobile-brand" aria-label="AjaxPro Lineup Maker">
+            <img src="assets/ajaxpro-logo-black.png" alt="AjaxPro" />
+            <div>
+              <p>AjaxPro</p>
+              <h2>Opstelling Maker</h2>
+            </div>
           </div>
-        </div>
 
-        <div class="formation-control">
-          <label for="formationSelect">Opstelling wijzigen</label>
-          <select id="formationSelect"></select>
+          <section class="hub-intro" aria-labelledby="hub-intro-title">
+            <h2 id="hub-intro-title">Maak jouw ideale Ajax-opstelling</h2>
+            <p>
+              Kies elf spelers, zet ze in jouw favoriete formatie en maak een deelbare
+              wedstrijdvisual met je voorspelde uitslag.
+            </p>
+          </section>
+
+          <form class="match-form panel-section" id="matchForm">
+            <label>
+              <span>Naam</span>
+              <input id="creatorName" type="text" maxlength="28" />
+            </label>
+            <label>
+              <span>Tegenstander</span>
+              <input id="opponentName" type="text" maxlength="24" />
+            </label>
+            <fieldset class="venue-toggle">
+              <legend>Ajax speelt</legend>
+              <label>
+                <input type="radio" name="venue" value="home" checked />
+                <span>Thuis</span>
+              </label>
+              <label>
+                <input type="radio" name="venue" value="away" />
+                <span>Uit</span>
+              </label>
+            </fieldset>
+            <div class="score-inputs" aria-label="Verwachte score">
+              <div class="score-stepper">
+                <span>Ajax</span>
+                <div>
+                  <button type="button" data-score-action="ajax-minus" aria-label="Ajax score omlaag">-</button>
+                  <output id="ajaxScoreOutput">0</output>
+                  <button type="button" data-score-action="ajax-plus" aria-label="Ajax score omhoog">+</button>
+                </div>
+              </div>
+              <div class="score-stepper">
+                <span id="opponentScoreLabel">Tegenstander</span>
+                <div>
+                  <button type="button" data-score-action="opponent-minus" aria-label="Tegenstander score omlaag">-</button>
+                  <output id="opponentScoreOutput">0</output>
+                  <button type="button" data-score-action="opponent-plus" aria-label="Tegenstander score omhoog">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="mode-controls" aria-label="Weergave opties">
+              <label class="theme-select">
+                <select id="themeSelect" aria-label="Thema kiezen">
+                  <option value="home">Thema: Home</option>
+                  <option value="away">Thema: Away</option>
+                  <option value="third">Thema: Third</option>
+                  <option value="standard">Thema: Standaard</option>
+                </select>
+              </label>
+              <label class="theme-select">
+                <select id="formationSelect" aria-label="Formatie kiezen">
+                  <option value="4-3-3">Formatie: 4-3-3</option>
+                  <option value="4-4-2">Formatie: 4-4-2</option>
+                  <option value="5-3-2">Formatie: 5-3-2</option>
+                </select>
+              </label>
+            </div>
+          </form>
+
+          <div class="selection-toolbar panel-section">
+            <label class="search-box">
+              <span>Zoek speler</span>
+              <input id="playerSearch" type="search" placeholder="Naam, positie of rugnummer" />
+            </label>
+            <div class="selection-summary">
+              <label class="meme-checkbox">
+                <input id="photoModeMeme" type="checkbox" />
+                <span>Memes</span>
+              </label>
+              <div class="selection-count">
+                <strong id="selectedCount">0</strong>
+                <span>van 11 gekozen</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="player-list" id="playerList" aria-live="polite"></div>
+
+          <section class="hub-faq" id="veelgestelde-vragen" aria-labelledby="faq-title">
+            <p class="eyebrow">Hulp bij de opstellingmaker</p>
+            <h2 id="faq-title">Veelgestelde vragen</h2>
+
+            <details>
+              <summary>Hoe maak ik een Ajax-opstelling?</summary>
+              <p>
+                Vul de wedstrijdgegevens in, kies een formatie en wijs elf spelers toe aan de
+                posities. Daarna kun je de spelers op het veld verslepen.
+              </p>
+            </details>
+            <details>
+              <summary>Welke formaties kan ik kiezen?</summary>
+              <p>Je kunt kiezen uit 4-3-3, 4-4-2 en 5-3-2.</p>
+            </details>
+            <details>
+              <summary>Kan ik mijn Ajax-opstelling downloaden en delen?</summary>
+              <p>
+                Ja. Download de complete opstelling als afbeelding of deel haar direct via het
+                deelmenu van je apparaat.
+              </p>
+            </details>
+            <details>
+              <summary>Wordt mijn opstelling opgeslagen?</summary>
+              <p>
+                Nee. Je naam, wedstrijdgegevens en spelerskeuzes blijven in je browser en worden
+                niet door AjaxPro opgeslagen. Lees meer in ons <a href="privacy.html">privacybeleid</a>.
+              </p>
+            </details>
+          </section>
+
+          <footer class="site-footer">
+            <a href="privacy.html">Privacy</a>
+          </footer>
         </div>
       </section>
     </main>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260729-formation-spacing"></script>
   </body>
 </html>

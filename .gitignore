@@ -1,0 +1,4 @@
+.netlify/
+dist/
+.DS_Store
+.vercel
