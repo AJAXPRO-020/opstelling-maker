@@ -28,3 +28,7 @@ Bij UI-werk:
 6. Gebruik geen random gradients, overdreven schaduwen of nutteloze animaties.
 7. Voeg states toe waar logisch: hover, focus, disabled, empty en error.
 8. Bouw rustig, overzichtelijk en onderhoudbaar.
+
+## Git en bestaande hosting
+
+Lees `README.md` voor lokale start, bronassets en bestaande Vercel-/historische Netlify-ID. Behoud lokale spelerassets en centrale fallback. Een push naar `main` kan Vercel-productie bijwerken en vereist expliciet akkoord; committen is geen deploy. Nooit automatisch een nieuwe hostingomgeving maken of productie met lokale bron gelijkstellen. Secrets en lokale providerlinks blijven buiten Git.

@@ -2,3 +2,16 @@
 dist/
 .DS_Store
 .vercel
+.env*
+
+# Secrets, dependency caches and local test output
+node_modules/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+coverage/
+test-results/
+playwright-report/
+*.log

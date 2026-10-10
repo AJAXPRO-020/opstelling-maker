@@ -8,7 +8,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'sha256-mI4HawSTS6RRtD4LluZJI2KSOy6G6Ab1WXCZuH+0Lt8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests"
+          "value": "default-src 'self'; script-src 'self' 'sha256-mI4HawSTS6RRtD4LluZJI2KSOy6G6Ab1WXCZuH+0Lt8='; style-src 'self' 'unsafe-inline'; img-src 'self' https://ajaxpro.fans data: blob:; connect-src 'self' https://ajaxpro.fans; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests"
         },
         {
           "key": "Permissions-Policy",
