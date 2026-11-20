@@ -100,6 +100,13 @@ let players = [
     role: "Middenvelder",
     photo: "assets/players/ouazane_2627.png",
   },
+  {
+    id: "bissouma",
+    number: 28,
+    name: "Yves Bissouma",
+    role: "Middenvelder",
+    photo: "assets/players/bissouma_2627.jpg",
+  },
   { id: "bouwman", number: 30, name: "Aaron Bouwman", role: "Verdediger", photo: "assets/players/bouwman_2627.png" },
   { id: "sutalo", number: 37, name: "Josip Sutalo", role: "Verdediger", photo: "assets/players/sutalo_2627.png" },
   { id: "bounida", number: 43, name: "Rayane Bounida", role: "Middenvelder", photo: "assets/players/bounida_2627.png" },
@@ -132,13 +139,13 @@ const loadCentralPlayers=async()=>{
       const current=currentById.get(player.id)||{},imageUrl=String(player.imageUrl||"");
       const centralPhoto=imageUrl&&!imageUrl.endsWith(".svg")?new URL(imageUrl,"https://ajaxpro.fans").href:"";
       const photo=current.photo||centralPhoto;
-      return {...current,id:player.id,number:player.shirtNumber,name:player.name,role:player.position,photo};
-    });
+      return {...current,id:player.id,number:player.shirtNumber??current.number,name:player.name,role:player.position,photo};
+    }).sort((first,second)=>(first.number??999)-(second.number??999));
     renderPlayers();renderPitch();renderMemeControlState();
   }catch(error){console.warn("Centrale spelerslijst tijdelijk niet beschikbaar; lokale fallback actief.");}
 };
 
-const playerAssetVersion = "20260830-add-tsygankov";
+const playerAssetVersion = "20261028-add-bissouma";
 const defaultFormation = "4-3-3";
 const formations = {
   "4-3-3": {
